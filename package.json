@@ -1,0 +1,30 @@
+{
+  "name": "skolnikorfbal.cz",
+  "version": "1.0.0",
+  "description": "skolnikorfbal.cz",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrychly/skolnikorfbal.cz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrychly/skolnikorfbal.cz/issues"
+  },
+  "homepage": "https://github.com/jrychly/skolnikorfbal.cz#readme",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-sass-glob": "^1.0.8",
+    "node-gyp": "^3.6.2"
+  }
+}
