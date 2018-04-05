@@ -3,6 +3,7 @@ skolnikorfbal.cz
 
 ## Usage
 - Clone the repository
+- Run `npm install -g gulp` in the directory
 - Run `npm install` in the directory
 - Run `Gulp`
 - Code away!
