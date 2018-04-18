@@ -61,8 +61,14 @@ gulp.task('styles', function() {
         }))
 });
 
+gulp.task('images', function(){
+    gulp.src(['./src/img/**/*'])
+    .pipe(gulp.dest('dist/img/'))
+});
 
-gulp.task('default', ['browser-sync', 'styles', 'views'], function() {
+
+gulp.task('default', ['browser-sync', 'styles', 'views', 'images'], function() {
     gulp.watch("./src/sass/**/*.sass", ['styles']);
     gulp.watch("./src/index.pug", ['views']);
+    gulp.watch("./src/img/**/*", ['images']);
 });
