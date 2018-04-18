@@ -1,0 +1,40 @@
+#header
+    +size(100% 100vh)
+    background: tint(red, 40%)
+
+    .nav
+        height: 75px
+        background: white
+        text-transform: uppercase
+        display: flex
+        align-items: center
+        +container
+
+        .logo
+            flex-grow: 1
+
+        .menu
+            text-align: right
+
+            &-link
+                margin-left: 20px
+                color: $purple
+
+    .hero
+        color: white
+        margin-top: 150px
+        +container
+
+        &-text
+            text-transform: uppercase
+            font-size: 75px
+            margin-bottom: 20px
+
+        &-button
+            font-size: 18px
+            line-height: 40px
+            font-weight: bold
+            border: 2px solid white
+            border-radius: 40px
+            display: inline-block
+            padding: 0 25px

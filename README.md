@@ -1,4 +1,4 @@
-# Å kolnÃ­ korfbal
+# Školní korfbal
 skolnikorfbal.cz
 
 ## Usage
@@ -8,13 +8,24 @@ skolnikorfbal.cz
 - Run `Gulp`
 - Code away!
 
-## Sass folder structure
+## Project folder structure
 
-    sass/
+    src/
     |
-    |-- partials/
-    |    |-- variables.sass		# Global variables
-    |	 |-- heades.sass		# Header section
-    |	 ...
+    |-- sass/
+    |    |-- main.sass          # Main Sass file
+    |    |-- _variables.sass    # Variables and mixins
+    |    |
+    |    |--partials/
+    |        |-- header.sass    # Header section styles
+    |        ...
     |
-    `-- styles.sass				# Main sass file
+    `-- index.pug               # Main Pug file
+
+
+    dist/
+    |
+    |-- css/
+    |    |--  main.min.css       # Output CSS
+    |
+    `-- index.html               # Output HTML
