@@ -5,6 +5,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="css/main.min.css")
+        script(src="script.js")
         title Školní korfbal
     body
         section#header
@@ -12,22 +13,59 @@ html(lang="en")
                 .logo
                 input(type="checkbox" id="toggle")
                 .menu
-                    a.menu-link(href="") Domů
-                    a.menu-link(href="") O projektu
-                    a.menu-link(href="") Jak začít
-                    a.menu-link(href="") Galerie
+                    a.menu-link(href="#header") Domů
+                    a.menu-link(href="#oprojektu") O projektu
+                    a.menu-link(href="#jakzacit") Jak začít
+                    a.menu-link(href="#galerie") Galerie
                     a.menu-link(href="") Kontakty
                 label.hamburger(for="toggle")
                     
             .hero
                 h1.hero-text Začni s<br>korfbalem
-                .hero-button Jak začít?
+                a(href="#jakzacit").hero-button Jak začít?
 
         section#oprojektu
-            .left
+            .side
                 h2.heading Lorem ipsum
                 p.subheading Lorem ipsum dolor sit amet
                 p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptates tempore inventore, quos autem fuga assumenda corporis cupiditate id obcaecati quas expedita? Ipsum minus sunt hic, accusamus aperiam dolor asperiores!
-                .button Jak začít?
+                a(href="#jakzacit").button Jak začít?
                 img(src="/img/svaz.png", alt="" height="75px").logo-svaz
             .image
+        
+        section#jakzacit
+            .image
+            .side
+                h2.heading Lorem ipsum
+                p.subheading Lorem ipsum dolor sit amet
+                p.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptates tempore inventore, quos autem fuga assumenda corporis cupiditate id obcaecati quas expedita? Ipsum minus sunt hic, accusamus aperiam dolor asperiores!
+                a(href="#galerie").button Galerie
+                
+        section#galerie
+            h2.heading Lorem ipsum
+            p.subheading Lorem ipsum dolor sit amet
+            .gallery
+                img(src="img/bg.jpg" heading="1" desc="test").gallery-img
+                img(src="img/left.jpg" heading="2" desc="test").gallery-img
+                img(src="img/bg.jpg" heading="3" desc="test").gallery-img
+                img(src="img/right.jpg" heading="4" desc="test").gallery-img
+                img(src="img/bg.jpg" heading="5" desc="test").gallery-img
+                img(src="img/right.jpg" heading="6" desc="test").gallery-img
+                img(src="img/bg.jpg" heading="7" desc="test").gallery-img
+                img(src="img/left.jpg" heading="8" desc="test").gallery-img
+                img(src="img/bg.jpg" heading="9" desc="test").gallery-img
+                img(src="img/right.jpg" heading="10" desc="test").gallery-img
+                img(src="img/bg.jpg" heading="11" desc="test").gallery-img
+                img(src="img/right.jpg" heading="12" desc="test").gallery-img
+                img(src="img/bg.jpg" heading="13" desc="test").gallery-img
+                img(src="img/right.jpg" heading="14" desc="test").gallery-img
+                img(src="img/left.jpg" heading="15" desc="test").gallery-img
+                
+            .modal-wrapper
+                .modal
+                    .close
+                    img(src="").modal-img
+                    .modal-text
+                        h2.modal-heading Lorem ipsum
+                        p.modal-description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum velit necessitatibus, at, officiis minus ducimus repudiandae commodi ipsa accusamus mollitia aut enim impedit, eveniet blanditiis. Odio vel magni alias suscipit.
+                .modal-bg

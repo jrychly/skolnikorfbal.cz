@@ -2,10 +2,14 @@
     +container-right
     display: flex
 
+    .side
+        padding-right: 150px
+
     .image
-        background: tint(red, 40%)
-        +size(50% 700px)
-        flex-grow: 1
+        background: url(../img/right.jpg)
+        background-size: cover
+        background-repeat: no-repeat
+        +size(50vw 700px)
 
 .heading
     font-size: 55px
@@ -18,20 +22,13 @@
     color: $yellow
     font-style: italic
     font-size: 18px
-    font-family: Noto sans
-    +pseudo
+    font-family: Noto serif
+    letter-spacing: -0.1px
+    +line
 
-    &::after
-        +size(50px 1px)
-        background: $purple
-        bottom: -30px
-        left: 0
-
-.left
-    width: 37.5%
-    padding-right: 150px
+.side
+    width: 37.5vw
     box-sizing: border-box
-    flex-grow: 1
 
 .text
     font-weight: 500

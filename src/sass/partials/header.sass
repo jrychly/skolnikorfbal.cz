@@ -3,6 +3,7 @@
     background: url('/img/bg.jpg')
     background-size: cover
     background-position: center
+    overflow: auto
 
 .nav
     height: 75px
@@ -10,6 +11,10 @@
     text-transform: uppercase
     display: flex
     align-items: center
+    position: fixed
+    top: 0
+    box-shadow: 0px 15px 20px -15px rgba(black, .2)
+    z-index: 10
     +container
 
     .logo
@@ -31,7 +36,7 @@
     color: white
     margin-top: 25vh
     +container
-    text-shadow: 0px 0px 50px rgba(0,0,0,0.5)
+    text-shadow: 0px 0px 50px rgba(black, .5)
 
     &-text
         text-transform: uppercase
@@ -43,7 +48,8 @@
         +button
         background: rgba(0,0,0,0.35)
         border: 2px solid white
-        box-shadow: 0px 0px 50px rgba(0,0,0,0.5)
+        box-shadow: 0px 0px 50px rgba(black, .5)
+        color: white
 
 .hamburger
     +size(30px 5px)

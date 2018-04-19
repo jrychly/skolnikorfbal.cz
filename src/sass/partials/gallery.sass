@@ -1,0 +1,92 @@
+#galerie
+    text-align: center
+
+    .heading
+        margin-bottom: 40px
+        +line
+
+        &::after
+            left: 50%
+            margin-left: -25px
+            bottom: -20px
+
+    .subheading
+        &::after
+            display: none
+
+    .gallery
+        display: flex
+        justify-content: flex-start
+        margin: 50px 5px
+        flex-wrap: wrap
+
+        &-img
+            flex: auto
+            margin: 5px
+            object-fit: cover
+            max-width: 400px
+            cursor: pointer
+            height: 200px
+
+    .modal-wrapper
+        display: none
+        position: fixed
+        top: 0
+        +size(100% 100vh)
+        z-index: 2
+        opacity: 0
+        transition: opacity .2s
+
+        .modal-bg
+            position: absolute
+            background: rgba(white, .5)
+            +size(100%)
+
+        .modal
+            +size(50% auto)
+            margin: auto
+            background: white
+            border-radius: 10px
+            box-shadow: 0px 10px 20px 5px rgba(black, .2)
+            z-index: 3
+            position: relative
+
+            &-img
+                border-radius: 10px 10px 0 0
+                width: 100%
+                max-height: 65vh
+                object-fit: cover
+
+            &-text
+                padding: 25px 100px
+
+            &-heading
+                color: $purple
+
+            &-description
+                color: $lightgrey
+
+            .close
+                top: 30px
+                right: 30px
+                +size(22px)
+                +pseudo
+                position: absolute
+                cursor: pointer
+
+                &::after,&::before
+                    +size(25px 2px)
+                    background: white
+                    top: 10px
+                    right: 0
+
+                &::after
+                    transform: rotate(45deg)
+
+                &::before
+                    transform: rotate(-45deg)
+
+
+    .modal-show
+        display: flex
+        opacity: 1
