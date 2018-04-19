@@ -1,0 +1,51 @@
+#oprojektu
+    +container-right
+    display: flex
+
+    .image
+        background: tint(red, 40%)
+        +size(50% 700px)
+        flex-grow: 1
+
+.heading
+    font-size: 55px
+    color: $purple
+    font-weight: 700
+    margin-top: 150px
+    margin-bottom: -10px
+
+.subheading
+    color: $yellow
+    font-style: italic
+    font-size: 18px
+    font-family: Noto sans
+    +pseudo
+
+    &::after
+        +size(50px 1px)
+        background: $purple
+        bottom: -30px
+        left: 0
+
+.left
+    width: 37.5%
+    padding-right: 150px
+    box-sizing: border-box
+    flex-grow: 1
+
+.text
+    font-weight: 500
+    color: $lightgrey
+    font-size: 18px
+    line-height: 1.5
+    letter-spacing: -0.5px
+    margin-top: 50px
+
+.button
+    +button
+    background: $purple
+    color: white
+    margin: 25px 0 43px
+
+.logo-svaz
+    display: block

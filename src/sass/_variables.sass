@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700')
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700')
+// @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400i')
 
 $green: #317A52
 $purple: #562950
 $yellow: #D98C2A
+$lightgrey: #8E8E8E
 
 @mixin container()
     @media screen and (min-width: 1024px)
@@ -11,3 +13,34 @@ $yellow: #D98C2A
     @media screen and (max-width: 1024px)
         width: 85%
         padding: 0 7.5%
+
+@mixin container-right()
+    @media screen and (min-width: 1024px)
+        width: 87.5%
+        padding: 0 0 0 12.5%
+    @media screen and (max-width: 1024px)
+        width: 97.5%
+        padding: 0 0 0 7.5%
+
+@mixin container-left()
+    @media screen and (min-width: 1024px)
+        width: 75%
+        padding: 0 12.5% 0 0
+    @media screen and (max-width: 1024px)
+        width: 85%
+        padding: 0 7.5% 0 0
+
+@mixin pseudo()
+    position: relative
+
+    &::after,&::before
+        content: ''
+        position: absolute
+
+@mixin button()
+    font-size: 20px
+    line-height: 40px
+    font-weight: 600
+    border-radius: 40px
+    display: inline-block
+    padding: 0 35px
