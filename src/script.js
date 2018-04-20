@@ -16,9 +16,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     function Modal(src, heading, desc) {
-        document.getElementsByClassName('modal-img')[0].setAttribute('src', src)
-        document.getElementsByClassName('modal-heading')[0].innerHTML = heading;
-        document.getElementsByClassName('modal-description')[0].innerHTML = desc;
-        modal.classList.add("modal-show");
+        if (window.matchMedia("(min-width: 597px)").matches) {
+            document.getElementsByClassName('modal-img')[0].setAttribute('src', src)
+            document.getElementsByClassName('modal-heading')[0].innerHTML = heading;
+            document.getElementsByClassName('modal-description')[0].innerHTML = desc;
+            modal.classList.add("modal-show");
+        }
     }
 });

@@ -1,3 +1,33 @@
+@media screen and (max-width: 1737px)
+    #galerie
+        .gallery-img:nth-last-child(n+3)
+            max-width: none
+        .gallery-img:nth-last-child(-n+3)
+            display: none
+
+//    Laptop L
+@media screen and (max-width: 1440px)
+    #oprojektu .side
+        padding-right: 50px
+
+    #jakzacit .side
+        padding-left: 50px
+
+    #galerie .modal-wrapper .modal
+        min-width: 900px
+
+//    Laptop
+@media screen and (max-width: 1024px)
+    #oprojektu .side
+        width: 42.5vw
+
+    #jakzacit .side
+        width: 42.5vw
+
+    #galerie .modal-wrapper .modal
+        min-width: 700px
+
+//    Tablet
 @media screen and (max-width: 768px)
     .nav
         position: relative
@@ -46,3 +76,51 @@
 
     .hero-text
         font-size: 10vmin
+
+    #oprojektu, #jakzacit
+        width: 100%
+        padding: 0
+        flex-direction: column
+        .side
+            padding: 0 7.5%
+            width: 100%
+
+            .subheading::after
+                left: 50%
+                margin-left: -25px
+
+        .image
+            width: 100%
+            min-height: 50vh
+
+    #jakzacit
+        flex-direction: column-reverse
+
+    #galerie
+        .gallery-img:nth-child(-n+5)
+            height: 275px
+            max-width: calc(50% - 10px)
+
+        .gallery-img:nth-child(n+5)
+            display: none
+
+        .modal-wrapper .modal
+            min-width: 95%
+
+@media screen and (max-width: 596px)
+    .side
+        text-align: center
+
+        .text
+            text-align: justify
+
+    #galerie
+        .gallery-img:nth-child(-n+3)
+            height: 300px
+            max-width: calc(100% - 10px)
+
+        .gallery-img:nth-child(n+3)
+            display: none
+
+//Mobile L
+//@media screen and (max-width: 425px)

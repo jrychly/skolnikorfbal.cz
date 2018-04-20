@@ -16,17 +16,17 @@
 
     .gallery
         display: flex
-        justify-content: flex-start
         margin: 50px 5px
         flex-wrap: wrap
+        justify-content: center
 
         &-img
             flex: auto
             margin: 5px
             object-fit: cover
-            max-width: 400px
             cursor: pointer
             height: 200px
+            max-width: calc(33% - 20px)
 
     .modal-wrapper
         display: none
@@ -44,11 +44,12 @@
 
         .modal
             +size(50% auto)
-            margin: auto
+            margin: 100px auto auto
             background: white
             border-radius: 10px
             box-shadow: 0px 10px 20px 5px rgba(black, .2)
             z-index: 3
+            min-width: 800px
             position: relative
 
             &-img
@@ -90,3 +91,8 @@
     .modal-show
         display: flex
         opacity: 1
+
+    .load-more
+        color: $lightgrey
+        font-size: 20px
+        text-decoration: underline
